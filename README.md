@@ -28,9 +28,9 @@ The repository also keeps the default Angular Karma test script available as `np
 City search simulates geolocation retrival (longitude and lattitude). Available cities to search are San Francisco, New York,London,Tokyo, and Paris
 Searching for any other city will result in the message: "City not found or weather unavailable."
 
-# 🧪 Testing (Jest)
+# 🧪 Testing (Karma)
 
-This project includes a Jest setup for unit tests (component + service specs under `src/app`). To install the required dev dependencies and run Jest locally:
+This project includes a Karma setup for unit tests (component + service specs under `src/app`). To run karma locally:
 
 ```powershell
 # run  tests
