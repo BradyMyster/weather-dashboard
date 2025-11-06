@@ -1,0 +1,19 @@
+<div class="weather-container">
+    <h2>🌦️ Weather Dashboard</h2>
+
+
+    <input type="text" [formControl]="searchControl" placeholder="Enter city name (e.g. London, Tokyo)..."
+        class="search-input" />
+
+
+    <div *ngIf="loading()" class="status">Loading...</div>
+    <div *ngIf="error() && !loading()" class="error">{{ error() }}</div>
+
+
+    <div *ngIf="weather() && !loading()" class="weather-card">
+        <h3>{{ weather()?.city }}</h3>
+        <div class="temp">{{ weather()?.temperature }}°C</div>
+        <div class="desc">{{ weather()?.description }} {{ weather()?.icon }}</div>
+        <div class="meta">💧 {{ weather()?.humidity }}% | 🌬️ {{ weather()?.windSpeed }} km/h</div>
+    </div>
+</div>
